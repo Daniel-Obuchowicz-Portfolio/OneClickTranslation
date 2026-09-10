@@ -10,6 +10,20 @@ Kompletny plugin WordPress integrujący DeepL API z WPML i Polylang. Repozytoriu
 - kolejka WP-Cron z lockingiem i retry, automatyczne aktualizacje, source hash i statusy;
 - natywne ekrany wp-admin, bulk actions, REST API, logi, statystyki użycia i WP-CLI.
 
+## Screenshots
+
+### Dashboard
+
+![OneClickTranslation Dashboard](assets/screenshots/dashboard.png)
+
+### Translation controls in the block editor
+
+![OneClickTranslation metabox in the WordPress block editor](assets/screenshots/editor-metabox.png)
+
+### Translation overview
+
+![OneClickTranslation Translations list](assets/screenshots/translations.png)
+
 ## Requirements
 
 Do uruchomienia bez Dockera wymagane są WordPress 6.4+, PHP 8.2+, MariaDB/MySQL, WPML lub Polylang oraz klucz DeepL API. Obraz developerski używa PHP 8.3 i MariaDB 11.4.
