@@ -1,5 +1,7 @@
 # OneClickTranslation
 
+[English version](README.en.md)
+
 Kompletny plugin WordPress integrujący DeepL API z WPML i Polylang. Repozytorium zawiera kod pluginu, środowisko Docker, automatyczny setup danych developerskich, WP-CLI oraz testy.
 
 ## Features
