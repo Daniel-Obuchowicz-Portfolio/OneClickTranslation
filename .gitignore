@@ -1,0 +1,8 @@
+.env
+.idea/
+.vscode/
+plugin/vendor/
+plugin/.phpunit.cache/
+plugin/.phpcs-cache
+wordpress_data/
+db_data/

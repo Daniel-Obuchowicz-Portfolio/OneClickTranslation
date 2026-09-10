@@ -1,0 +1,52 @@
+[
+  {
+    "key": "group_oct_translation_fixture",
+    "title": "OneClickTranslation Fixture",
+    "fields": [
+      {
+        "key": "field_oct_group",
+        "label": "Hero",
+        "name": "hero",
+        "type": "group",
+        "sub_fields": [
+          {"key": "field_oct_group_title", "label": "Title", "name": "title", "type": "text"},
+          {"key": "field_oct_group_link", "label": "Link", "name": "link", "type": "link"}
+        ]
+      },
+      {
+        "key": "field_oct_repeater",
+        "label": "Sections",
+        "name": "sections",
+        "type": "repeater",
+        "layout": "table",
+        "button_label": "Add section",
+        "sub_fields": [
+          {"key": "field_oct_repeater_heading", "label": "Heading", "name": "heading", "type": "text"},
+          {"key": "field_oct_repeater_text", "label": "Text", "name": "text", "type": "wysiwyg"},
+          {"key": "field_oct_repeater_image", "label": "Image", "name": "image", "type": "image", "return_format": "id"}
+        ]
+      },
+      {
+        "key": "field_oct_flexible",
+        "label": "Page sections",
+        "name": "page_sections",
+        "type": "flexible_content",
+        "button_label": "Add layout",
+        "layouts": [
+          {
+            "key": "layout_oct_text",
+            "name": "text_section",
+            "label": "Text section",
+            "display": "block",
+            "sub_fields": [
+              {"key": "field_oct_flexible_heading", "label": "Heading", "name": "heading", "type": "text"},
+              {"key": "field_oct_flexible_body", "label": "Body", "name": "body", "type": "textarea"}
+            ]
+          }
+        ]
+      }
+    ],
+    "location": [[{"param": "post_type", "operator": "==", "value": "page"}]],
+    "active": true
+  }
+]

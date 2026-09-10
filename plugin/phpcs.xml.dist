@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<ruleset name="OneClickTranslation">
+  <description>OneClickTranslation coding standards.</description>
+  <file>oneclicktranslation.php</file>
+  <file>src</file>
+  <arg name="extensions" value="php"/>
+  <arg value="sp"/>
+  <rule ref="WordPress-Core">
+    <!-- The public architecture intentionally uses PSR-4 filenames and camelCase APIs. -->
+    <exclude name="WordPress.Files.FileName"/>
+    <exclude name="WordPress.NamingConventions.ValidVariableName"/>
+    <exclude name="WordPress.NamingConventions.ValidFunctionName"/>
+    <exclude name="WordPress.PHP.YodaConditions"/>
+    <exclude name="WordPress.Security.EscapeOutput.ExceptionNotEscaped"/>
+    <exclude name="WordPress.DB.PreparedSQL.InterpolatedNotPrepared"/>
+    <exclude name="Generic.Files.OneObjectStructurePerFile"/>
+    <exclude name="Universal.NamingConventions.NoReservedKeywordParameterNames"/>
+  </rule>
+  <exclude-pattern>vendor/*</exclude-pattern>
+  <exclude-pattern>tests/*</exclude-pattern>
+</ruleset>
